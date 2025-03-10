@@ -1,11 +1,18 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
-  base: './',
+  root: path.resolve(__dirname, 'public'),
+  base: '/',
   build: {
-    outDir: 'build'
+    outDir: '../dist', 
+    emptyOutDir: true, 
+    assetsDir: 'static',
+    copyPublicDir: true,
   },
   server: {
-    open: true
-  }
+    port: 3000,
+  },
+  publicDir: path.resolve(__dirname, 'statx'), 
 });
+
