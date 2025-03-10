@@ -1,0 +1,21 @@
+{
+  "name": "webvr-z",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@babylonjs/core": "^7.52.2",
+    "@babylonjs/loaders": "^7.52.2",
+    "three": "^0.150.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^6.2.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "buildx": "vite build",
+    "preview": "vite preview"
+    "build": "npm run build", 
+    "deploy": "gh-pages -d build" 
+ }
+}
